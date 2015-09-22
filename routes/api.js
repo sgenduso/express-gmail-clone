@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var db = require('monk')('localhost/gmail-clone');
+var db = require('monk')(MONGOLAB_URI || process.env.GMAIL_DB);
 var emails = db.get('messages');
 
 /* GET users listing. */
