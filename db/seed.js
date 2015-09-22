@@ -29,6 +29,24 @@ Messages.insert({
     starred: false,
     read: false,
     filters:[]
+  }),
+  Messages.insert({
+    subject: "FA LA LA LA LA",
+    starred: false,
+    read: false,
+    filters:[]
+  }),
+  Messages.insert({
+    subject: "LA LA",
+    starred: false,
+    read: false,
+    filters:[]
+  }),
+  Messages.insert({
+    subject: "LA LAAAAA",
+    starred: false,
+    read: false,
+    filters:[]
   })
 ]);
 
