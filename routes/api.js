@@ -8,7 +8,6 @@ router.get('/', function(req, res, next) {
   emails.find({})
   .then(function (emails) {
     res.json(emails);
-    console.log(emails);
     res.render('index', {emails: emails});
   });
 });
@@ -29,7 +28,6 @@ router.post('/read', function (req, res, next) {
   .then(function () {
     return emails.find({})
     .then(function (emails) {
-      console.log(emails);
       res.json(emails);
     });
   });
@@ -56,7 +54,6 @@ router.post('/filters', function (req, res, next) {
 });
 
 router.post('/new', function (req, res, next) {
-  console.log('I AM HERE IM HERE I SAID I AM HERE');
   var newEmail = {
     subject: req.body.subject,
     starred: false,
